@@ -8,9 +8,7 @@ export default function Filter() {
   const dispatch = useDispatch();
   const filter = useSelector(getFilter);
   
-
   const handleChange = e => {
-    console.log(e.currentTarget.value.toLowerCase())
     dispatch(setFilter(e.currentTarget.value.toLowerCase()))
   }
   
